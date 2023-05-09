@@ -3,15 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.115",
-    "aws-sdk": "2.814.0",
     "jest": "25.4.0"
   },
   "dependencies": {
-    "@aws-sdk/client-s3": "^3.327.0"
+    "@aws-sdk/client-s3": "^3.327.0",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.19.3/xlsx-0.19.3.tgz"
   },
   "scripts": {
     "test": "jest",
     "zipit": "npx lambda-build"
+  },
+  "overrides": {
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.19.3/xlsx-0.19.3.tgz"
   }
 }
